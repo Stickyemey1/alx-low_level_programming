@@ -1,26 +1,33 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  **/
+
 int main(void)
 {
-	int a;
+	int a, b;
 
-	for (a = 1 ; a <= 89 ; )
+	for (a = '0' ; a <= '8' ; )
 	{
-		putchar((a / 10) + '0');
-		putchar((a % 10) + '0');
-		if (a < 89)
+		for (b = '0' ; b <= '9' ; )
 		{
-			putchar(',');
-			putchar(' ');
-			a++;
+			if (a < b)
+			{
+				putchar(a);
+				putchar(b);
+				if (!(a == '8' && b == '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			b++;
 		}
-		else
-			a++;
+		a++;
 	}
 	putchar('\n');
 	return (0);
