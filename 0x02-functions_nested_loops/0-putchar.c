@@ -1,15 +1,21 @@
 #include <unistd.h>
-#include "alx.h"
+#include "_putchar"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- * \n: Print a new line
+ * main - A program that prints _putchar, followed by a new line.
  *
  * Return: 0 On success.
  **/
-int _putchar(char c)
+int main(void)
 {
-	_putchar("\n");
+	char *str;
+	int i;
+
+	str = "_putchar";
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
