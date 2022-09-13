@@ -2,20 +2,14 @@
 #include "main.h"
 
 /**
- * main - A program that prints _putchar, followed by a new line.
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
- * Return: 0 On success.
+ * Return: On success 0.
+ * On error, -1 is returned, and errno is set appropriately.
  **/
-int main(void)
+int _putchar(char c)
 {
-	char *str;
-	int i;
-
-	str = "_putchar";
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+	return (write(1, &c, 1));
 	return (0);
 }
