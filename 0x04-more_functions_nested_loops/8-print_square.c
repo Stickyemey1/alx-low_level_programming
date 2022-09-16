@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * print_square - a function that prints a square.
  * @size: the size of square, (size X size) of "#"
