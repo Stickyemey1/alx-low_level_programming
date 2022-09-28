@@ -5,13 +5,11 @@
  * Return: string
  */
 
-void prints_rev_recursion(char *s)
+void print_rev_recursion(char *s)
 {
 	if (*s != '\0')
 	{
+		_print_rev_recursion;
 		_putchar(*s);
-		return;
 	}
-	_putchar('\n');
-	_prints_rev_reccursion;
 }
