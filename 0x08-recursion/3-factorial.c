@@ -10,7 +10,7 @@
 int factorial(int n)
 {
 	int val = 1;
-	
+
 	if (val < 0)
 	{
 		return (-1);
@@ -23,5 +23,5 @@ int factorial(int n)
 	{
 		val = n * factorial(n - 1);
 	}
-	return val;
+	return factorial;
 }
