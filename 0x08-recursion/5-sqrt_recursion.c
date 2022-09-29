@@ -9,9 +9,7 @@
 int _sqrt_recursion(int n)
 {
 	if (n <= 0)
-	{
 		return (-1);
-	}
 	return (natural_root(1, n));
 }
 
@@ -22,17 +20,13 @@ int _sqrt_recursion(int n)
  * @n: a given number
  *
  * Return: return x, otherwise return -1
- **/
+ */
 
 int natural_root(int x, int n)
 {
 	if (x * x > n)
-	{
 		return (-1);
-	}
 	if (x * x == n)
-	{
 		return (x);
-	}
 	return (natural_root(x + 1, n));
 }
