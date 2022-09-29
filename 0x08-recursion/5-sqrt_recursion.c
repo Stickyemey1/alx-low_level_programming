@@ -22,11 +22,11 @@ int _sqrt_recursion(int n)
  * Return: return x, otherwise return -1
  */
 
-int natural_root(int x, int n)
+int natural_root(int x, int y)
 {
-	if (x * x > n)
+	if (x * x > y)
 		return (-1);
-	if (x * x == n)
+	if (x * x == y)
 		return (x);
-	return (natural_root(x + 1, n));
+	return (natural_root(x + 1, y));
 }
