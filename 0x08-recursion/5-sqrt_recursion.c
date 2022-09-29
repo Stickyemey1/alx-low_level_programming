@@ -12,6 +12,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
+	return (natural_root(1, n));
 }
 
 /**
