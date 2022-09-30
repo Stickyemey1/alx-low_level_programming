@@ -8,7 +8,6 @@
  *
  * Return: return 0 on success, -1 if failure
  */
-
 int main(int argc, char *argv[])
 {
 	int res1, res2;
