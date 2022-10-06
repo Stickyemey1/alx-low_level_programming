@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
 
 /**
  * main - a function that multiplies two positive numbers
